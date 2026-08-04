@@ -1,6 +1,7 @@
 class Solution {
 public:
     void backtrack(int count, unordered_set<string>& numsSet, string& temp, string& answer){
+        if(!answer.empty()) return;
         if(count == numsSet.size()){
             if(temp.size()==numsSet.size()&&numsSet.find(temp) == numsSet.end()){
                 answer = temp;
