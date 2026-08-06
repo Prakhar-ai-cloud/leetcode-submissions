@@ -18,6 +18,7 @@ public:
 
     }
     vector<vector<int>> permute(vector<int>& nums) {
+        unordered_map<int,vector<int>> map;
         int n = nums.size();  
        vector<int> visited(21,0);
        vector<int> temp;
